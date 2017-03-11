@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# quick deploy static blog to github.io page.
+
+
+if [ -z ${1} ]; then
+  echo "Usage: ./quick-deploy <your_branch_name>"
+  exit 1
+fi
+
+set -xe
+sed -i "s/branch:.*/branch: ${1}/g" _config.yml
+
+hexo clean && hexo g && hexo d
