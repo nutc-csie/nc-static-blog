@@ -14,6 +14,7 @@ Get source code from GitHub, and install packages afterwards:
 ```sh
 $ git clone https://github.com/nutc-csie/nc-static-blog.git
 $ cd nc-static-blog
+$ git submodule init && git submodule update
 $ npm install
 ```
 
