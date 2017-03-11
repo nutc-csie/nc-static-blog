@@ -1,0 +1,3 @@
+[submodule "themes/beautiful-hexo"]
+	path = themes/beautiful-hexo
+	url = https://github.com/nutc-csie/beautiful-hexo.git
